@@ -1,0 +1,10 @@
+build-essential
+cmake
+pkg-config
+libssl-dev
+zlib1g-dev
+libcurl4-openssl-dev
+meson 
+ninja-build 
+gdb
+libpsl-dev

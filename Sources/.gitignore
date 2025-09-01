@@ -1,0 +1,52 @@
+# ========================
+# Build
+# ========================
+/build/
+/bin/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.dir
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+
+# ========================
+# IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# CMake FetchContent dependencies
+# ========================
+# Evita versionar código baixado automaticamente
+/deps/
+/libs/*
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# OS-specific
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# User-specific config
+# ========================
+*.user
+*.user.* 
+*.suo
+*.ncb
+*.sdf
+*.opensdf
