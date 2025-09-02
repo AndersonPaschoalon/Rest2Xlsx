@@ -42,17 +42,18 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(xlsxwriter)
 
-# Executável
-add_executable(hello_app 
-    src/main.cpp
-    src/HelloWorld.cpp
+## Executável
+add_executable(
+    rest2xlsx.exe
+    ./src/DataPipeline.cpp
+    ./src/JsonParser.cpp  
+    ./src/RestClient.cpp  
+    ./src/XlsxWriter.cpp  
+    ./src/main.cpp
 )
 
-# Includes do projeto
-target_include_directories(hello_app  PRIVATE include)
-
 # Linkagem
-target_link_libraries(hello_app 
+target_link_libraries(rest2xlsx.exe 
     PRIVATE
     cpr::cpr
     simdjson::simdjson
